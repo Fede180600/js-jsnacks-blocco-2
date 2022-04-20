@@ -6,13 +6,28 @@
 // Metodo con ciclo for
 
 // Ciclo (for) per chiedere 5 volte di inserire un numero
+// let sum = 0;
+
+// for (let i = 0; i < 5; i++) {
+//     const userNumber = parseInt(prompt("Inserisci un numero"));
+//     sum += userNumber
+// }
+
+// // Stampo in console la somma dei 5 numeri inseriti 
+// console.log(sum);
+
+// Metodo con ciclo while 
+
+// Ciclo (while) per chiedere 5 volte di inserire un numero 
+let counter = 0;
 let sum = 0;
 
-for (let i = 0; i < 5; i++) {
+
+while (counter < 5) {
     const userNumber = parseInt(prompt("Inserisci un numero"));
-    sum += userNumber
+    sum += userNumber;
+    counter++;
 }
 
-// Stampo in console la somma dei 5 numeri inseriti 
+//Stampo in console la somma dei 5 numeri inseriti
 console.log(sum);
-
