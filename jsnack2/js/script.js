@@ -5,17 +5,20 @@
 const guestsNames = ["Alberto", "Giovanni", "Edoardo", "Nicola", "Francesca", "Alessia", "Simone", "Nicole", "Sara"];
 const guestsSurnames = ["Malvezzi", "Rossi", "Bergamini", "Farci", "Setti", "Malvezzi", "Valeri", "Corradi"];
 
-// Genero un nome e un cognome casuali dalle arrays
-const randomNameIndex = Math.floor(Math.random() * guestsNames.length);
-const randomName = guestsNames [randomNameIndex];
-console.log("Posizione nella array dei nomi:", randomNameIndex);
-console.log("Nome corrispondente:", randomName);
+// Genero un 3 coppie nome - cognome casuali dalle arrays
+for (let i = 0; i < 3; i++) {
+    const randomNameIndex = Math.floor(Math.random() * guestsNames.length);
+    const randomName = guestsNames [randomNameIndex];
+    // console.log("Posizione nella array dei nomi:", randomNameIndex);
+    // console.log("Nome corrispondente:", randomName);
+    
+    const randomSurnameIndex = Math.floor(Math.random() * guestsSurnames.length);
+    const randomSurname = guestsSurnames [randomSurnameIndex];
+    // console.log("Posizione nella array dei cognomi:", randomSurnameIndex);
+    // console.log("Cognome corrispondente:", randomSurname);
 
-const randomSurnameIndex = Math.floor(Math.random() * guestsSurnames.length);
-const randomSurname = guestsSurnames [randomSurnameIndex];
-console.log("Posizione nella array dei cognomi:", randomSurnameIndex);
-console.log("Cognome corrispondente:", randomSurname);
-
-// Stampo il risultato in console 
-const guest = `${randomName} ${randomSurname}`;
-console.log("Invitato:", guest);
+    // Stampo il risultato in console 
+    const guest = `${randomName} ${randomSurname}`;
+    console.log("Invitato:", guest);
+    
+}
