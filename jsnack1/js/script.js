@@ -25,8 +25,12 @@ let sum = 0;
 
 while (counter < 5) {
     const userNumber = parseInt(prompt("Inserisci un numero"));
-    sum += userNumber;
-    counter++;
+    if ( !isNaN(userNumber) ) {
+        sum += userNumber;
+        counter++;
+    } else {
+        alert("NON E' UN NUMERO");
+    }
 }
 
 //Stampo in console la somma dei 5 numeri inseriti
