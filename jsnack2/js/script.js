@@ -10,3 +10,12 @@ const randomNameIndex = Math.floor(Math.random() * guestsNames.length);
 const randomName = guestsNames [randomNameIndex];
 console.log("Posizione nella array dei nomi:", randomNameIndex);
 console.log("Nome corrispondente:", randomName);
+
+const randomSurnameIndex = Math.floor(Math.random() * guestsSurnames.length);
+const randomSurname = guestsSurnames [randomSurnameIndex];
+console.log("Posizione nella array dei cognomi:", randomSurnameIndex);
+console.log("Cognome corrispondente:", randomSurname);
+
+// Stampo il risultato in console 
+const guest = `${randomName} ${randomSurname}`;
+console.log("Invitato:", guest);
